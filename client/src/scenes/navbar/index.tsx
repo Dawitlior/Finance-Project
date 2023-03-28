@@ -31,7 +31,7 @@ const Navbar = (props: Props) => {
                         Dashboard
                     </Link>
                 </Box>
-                <Box sx={{ "&:hover": { color: palette.primary[100] } }}>
+                {/* <Box sx={{ "&:hover": { color: palette.primary[100] } }}>
                     <Link to="/predictions"
                         onClick={() => setSelected("predictions")}
                         style={{
@@ -41,7 +41,7 @@ const Navbar = (props: Props) => {
                     >
                         Predictions
                     </Link>
-                </Box>
+                </Box> */}
             </FlexBetween>
         </FlexBetween>)
 }
