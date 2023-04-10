@@ -1,4 +1,6 @@
 # Finance Dashboard App
+https://financeer-app.onrender.com
+#
 
 this app going to consist of KPIs and information that business persons can use to display their information about key performance indicators,
 and other types of data that they need to keep track of their finances for their company.
