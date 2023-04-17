@@ -16,10 +16,11 @@ import {
   Tooltip,
   Area,
 } from "recharts";
+import CircularProgress from '@mui/material/CircularProgress';
 
 const Row1 = () => {
   const { palette } = useTheme();
-  const { data } = useGetKpisQuery();
+  const { data, isLoading } = useGetKpisQuery();
   const revenue = useMemo(() => {
     return (
       data &&
@@ -59,6 +60,10 @@ const Row1 = () => {
   }, [data]);
 
   return (
+    <>
+    { isLoading ? (
+      <CircularProgress/>
+    ) : (
     <>
       <DashboardBox gridArea="a">
         <ResponsiveContainer width="100%" height="100%">
@@ -228,6 +233,8 @@ const Row1 = () => {
           </BarChart>
         </ResponsiveContainer>
       </DashboardBox>
+    </>
+        )}
     </>
   );
 };
